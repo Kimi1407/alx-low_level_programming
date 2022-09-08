@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - should print the line "Programming is like building a multilingual puzzle if correct
+ * main - should print the line stated
  * Description: using the put function
  * Return: 0
  */
