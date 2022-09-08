@@ -1,8 +1,10 @@
 #include <stdio.h>
 
 /**
- * main - should print the code and allow the put function
- * description - code should print "Programming is like building a multilingual puzzle if correct
+ * main - should print the line "Programming is like building a multilingual puzzle if correct
+ * 
+ * description - using the put function
+ *
  * Return: 0
  */
 int main(void)
