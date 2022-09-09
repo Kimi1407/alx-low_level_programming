@@ -11,7 +11,6 @@ int main(void)
 	long int oged;
 	long long int og;
 	float oges;
-
 	printf("Size of a char: %zu byte(s)\n", sizeof(oge));
 	printf("Size of an init: %zu byte(s)\n", sizeof(ogec));
 	printf("Size of a long init: %zu byte(s)\n", sizeof(oged));
