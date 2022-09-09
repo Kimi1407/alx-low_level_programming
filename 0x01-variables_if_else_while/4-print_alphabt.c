@@ -3,7 +3,7 @@
 /**
  * main - prints the alphabet in lowercase except q and e
  * Description: using the putchar function
- * Result: 0
+ * Return: 0
  */
 int main(void)
 {
