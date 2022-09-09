@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+
+/**
  * main - print the last digit
  * Description: using the if and else function
  * Return: 0
