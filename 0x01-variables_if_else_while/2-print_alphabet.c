@@ -1,5 +1,6 @@
 #include <stdio.h>
-/*
+
+/**
  * main - print alphabets in lower case
  * Description: using the putchar function
  * Return: 0
