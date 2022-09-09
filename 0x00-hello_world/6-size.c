@@ -2,7 +2,7 @@
 /**
  * main - should print sizes of types
  * Description: 'using the printf function'
- * Return: 0
+ * Return: Always 0 (Success);
  */
 int main(void)
 {
