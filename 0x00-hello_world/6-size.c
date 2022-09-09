@@ -6,17 +6,17 @@
  */
 int main(void)
 {
-	char age;
-	int aged;
-	long int ages;
-	long long int ag;
-	float agem;
+	char oge;
+	int ogec;
+	long int oged;
+	long long int og;
+	float oges;
 
-	printf("Size of a char: %zu byte(s)\n", sizeof(age));
-	printf("Size of an init: %zu byte(s)\n", sizeof(aged));
-	printf("Size of a long init %zu byte(s)\n", sizeof(ages));
-	printf("Size of a long long init %zu byte(s)\n", sizeof(ag));
-	printf("Size of a float %zu byte(s)\n", sizeof(agem));
+	printf("Size of a char: %zu byte(s)\n", sizeof(oge));
+	printf("Size of an init: %zu byte(s)\n", sizeof(ogec));
+	printf("Size of a long init %zu byte(s)\n", sizeof(oged));
+	printf("Size of a long long init %zu byte(s)\n", sizeof(og));
+	printf("Size of a float %zu byte(s)\n", sizeof(oges));
 	return (0);
 }
 
