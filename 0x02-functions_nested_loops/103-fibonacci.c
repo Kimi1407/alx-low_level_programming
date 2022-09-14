@@ -1,32 +1,32 @@
 #include <stdio.h>
 
 /**
- * main - prints the sum of the even-valued terms
- * in the Fibonacci sequence
+ * main - finds and prints the sum of the even-valued terms
+ * followed by a new line
+ * Description: using printf
  * Return: 0
  */
-
 int main(void)
 {
-	long int a, b, c, next;
+	int b;
+	unsigned long int c, d, next, sum;
 
-	b = 1;
+	c = 1;
+	d = 2;
+	sum = 0;
 
-	c = 2;
-
-	for (a = 1; a <= 50; ++a)
+	for (b = 1; b <= 33; ++b)
 	{
-		if (b != 20365011074)
+		if (c < 4000000 && (c % 2) == 0)
 		{
-			printf("%ld, ", b);
-		} else
-		{
-			printf("%ld\n", b);
+			sum = sum + c;
 		}
-		next = b + c;
-		b = c;
-		c = next;
+		next = c + d;
+		c = d;
+		d = next;
 	}
+
+	printf("%lu\n", sum);
 
 	return (0);
 }
