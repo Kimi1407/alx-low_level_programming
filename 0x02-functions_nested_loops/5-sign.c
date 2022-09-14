@@ -2,7 +2,7 @@
 
 /**
  * print_sign - prints the sign of a number
- * @c: int is used as argument for the function
+ * @n: int is used as argument for the function
  * Return: 0
  */
 
