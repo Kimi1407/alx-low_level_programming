@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_numbers - print all numbers from
+ * print_numbers - function that print all numbers from
  * 0 to 9
  *
  * Return: returns nothing
@@ -12,7 +12,7 @@ void print_numbers(void)
 {
 	int n;
 
-	for (n = 0; n < 10; n++)
+	for (n = 48; n < 58; n++)
 	{
 		putchar(n);
 	}
