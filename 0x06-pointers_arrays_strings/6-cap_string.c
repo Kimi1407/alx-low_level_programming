@@ -1,53 +1,33 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: length as an integer
+ * cap_string - capitalizes everey word of a string
+ * @s: string to modify
+ *
+ * Return: the resulting string
  */
-
-int _strlen(char *s)
+char *cap_string(char *s)
 {
-	int len = 0;
+	int a, b;
 
-	while (*(s + len) != '\0')
-		len++;
+	char spe[13] = {' ', '\t', '\n', ',', ';', '.',
+		'!', '?', '"', '(', ')', '{', '}'};
 
-	return (len);
-}
-
-/**
- * cap_string - function that capitalizes all words of a string
- * @str: string to be capitalized
- * Return: capitalized string
- */
-
-char *cap_string(char *str)
-{
-	int index = 0;
-
-	while (str[++index])
+	for (a = 0; s[a] != '\0'; a++)
 	{
-		while (!(str[index] >= 'a') && (str[index] <= 'z'))
-			index++;
+		if (a == 0 && s[a] >= 'a' && s[a] <= 'z')
+			s[a] -= 32;
 
-		if (str[index - 1] == ' ' ||
-				str[index - 1] == '\t' ||
-				str[index - 1] == '\n' ||
-				str[index - 1] == ',' ||
-				str[index - 1] == ';' ||
-				str[index - 1] == '.' ||
-				str[index - 1] == '!' ||
-				str[index - 1] == '?' ||
-				str[index - 1] == '"' ||
-				str[index - 1] == '(' ||
-				str[index - 1] == ')' ||
-				str[index - 1] == '{' ||
-				str[index - 1] == '}')
-			str[index] -= 32;
+		for (b = 0; b < 13; b++)
+		{
+			if (s[a] == spe[b])
+			{
+				if (s[a + 1] >= 'a' && s[a + 1] <= 'z')
+				{
+					s[a + 1] -= 32;
+				}
+			}
+		}
 	}
 
-	return (str);
 }
-
-
